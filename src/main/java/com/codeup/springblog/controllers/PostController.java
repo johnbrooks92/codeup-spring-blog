@@ -38,3 +38,19 @@ public class PostController {
         model.addAttribute("post", post);
         return "posts/show";
     }
+
+    @GetMapping("/posts/create")
+    @ResponseBody
+    public String postForm() {
+        return "Create a post here!";
+    }
+
+    @PostMapping("/posts/create")
+    @ResponseBody
+    public String createPost() {
+        return "Creating a new post...";
+    }
+}
+
+
+}

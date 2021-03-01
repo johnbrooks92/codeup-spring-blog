@@ -14,6 +14,8 @@ public class UserService {
         this.usersDao = usersDao;
     }
 
+    //Temporary placeholder
+    // In the future we will replace this with the current logged in user
     public User getLoggedInUser() {
         return usersDao.findAll().get(0);
     }

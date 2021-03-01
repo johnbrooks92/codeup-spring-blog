@@ -23,7 +23,6 @@ public class PostController {
         this.usersDao = usersDao;
         this.userService = userService;
         this.emailService = emailService;
-
     }
 
     @GetMapping("/posts")
@@ -35,6 +34,7 @@ public class PostController {
 
     @GetMapping("/posts/{id}")
     public String postView(Model model, @PathVariable long id) {
+//        get single post by id later
         Post post = postsDao.getOne(id);
         model.addAttribute("post", post);
         return "posts/show";
@@ -70,6 +70,8 @@ public class PostController {
 
     @PostMapping("/posts/create")
     public String createPost(@ModelAttribute Post post) {
+        // Will throw if no users in the db!
+        // In the future, we will get the logged in user
         User user = userService.getLoggedInUser();
         post.setUser(user);
 

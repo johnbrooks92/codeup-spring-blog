@@ -1,4 +1,4 @@
-USE springblog_db;
+USE spring_db;
 
 insert into posts (body, title)
 values ('Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',

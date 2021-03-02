@@ -16,6 +16,9 @@ public class Post {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String body;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
     public User getUser() {
         return user;
     }
@@ -23,9 +26,6 @@ public class Post {
     public void setUser(User user) {
         this.user = user;
     }
-
-    @ManyToOne
-    private User user;
 
     public Post() {
     }

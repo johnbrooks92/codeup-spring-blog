@@ -1,9 +1,15 @@
-body {
-  color: navy;
-  background-color: orangered;
+*{
+  background-color: aqua;
 }
 
+h1 {
+  color: black;
+}
+.navbar{
+  color: aqua;
+  background-color: black;
+}
 .navbar-collapse{
   color: aqua;
-  background-color: coral;
+  background-color: black;
 }

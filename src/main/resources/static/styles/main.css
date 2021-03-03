@@ -1,4 +1,9 @@
-* {
-  color: lightcoral;
-  background-color: bisque;
+body {
+  color: navy;
+  background-color: orangered;
+}
+
+.navbar-collapse{
+  color: aqua;
+  background-color: coral;
 }

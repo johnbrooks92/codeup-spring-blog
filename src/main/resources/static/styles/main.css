@@ -1,15 +1,16 @@
-*{
-  background-color: aqua;
+body{
+  background-color: #036666;
 }
 
 h1 {
   color: black;
 }
 .navbar{
-  color: aqua;
-  background-color: black;
+  color: #036666;
 }
 .navbar-collapse{
-  color: aqua;
+  color: #036666;
+}
+nav{
   background-color: black;
 }

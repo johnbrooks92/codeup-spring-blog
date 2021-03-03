@@ -1,7 +1,10 @@
 body{
   background-color: #036666;
 }
-
+head{
+  color: #036666;
+  background-color: black;
+}
 h1 {
   color: black;
 }
